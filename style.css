@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --White: hsl(0, 100%, 100%);
+    --Purple-100: hsl(275, 100%, 97%);
+    --Purple-600: hsl(292, 16%, 49%);
+    --Purple-950: hsl(292, 42%, 14%);
+    /** Weights: 400, 600, 700 */
+}
+
+body {
+    font-family: 'Work Sans' , sans-serif;
+    color: var(--Purple-950);
+    background: url(assets/images/background-pattern-mobile.svg);
+    background-color: var(--Purple-100);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* .main { 
+
+} */
+.container {
+    margin: 9rem auto 5rem; 
+    max-width: 88vw;
+    background: var(--White);
+    padding: 1.5rem;
+    border-radius: 0.5em;
+    display: grid;
+    gap: 1.3rem ; 
+}
+.title {
+    display: flex;
+    gap: 1.7rem ;
+
+    .title__icon-star {
+        width: 1.5rem;
+    }
+}
+.container-faq {
+    display: grid;
+    gap: 1.5rem;
+}
+.question {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+
+    .question__text {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
+.answer {
+    color: var(--Purple-600);
+}
+hr {
+    color: var(--Purple-600);
+}
