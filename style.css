@@ -60,15 +60,34 @@ body {
         font-size: 1rem;
         font-weight: 600;
         
-        &:hover {
-            color: var(--Purple-600);
-            cursor: pointer;
-        }
+    }
+
+    &:hover {
+        color: var(--Purple);
+        cursor: pointer;
     }
 }
 .answer {
     color: var(--Purple-600);
+    display: none;
+    
+    opacity: 0;
+    transform-origin: top;
+    transition: all 0.3s ease-out;
+    transition-behavior: allow-discrete;  /** Permite animación salida*/
+    
+    
+    &.active {
+        display: block;
+        opacity: 1;
+
+        @starting-style {
+             opacity: 0;   /** Permite animación entrada*/
+        }
+
+    }
 }
+
 hr {
     color: var(--Purple-600);
 }
